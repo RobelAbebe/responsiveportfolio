@@ -1,0 +1,8 @@
+{
+    "backend": "nodejs",
+    "framework": "other",
+    "publicFolder": "public",
+    "buildCommand": "npm install && npm run build",
+    "publishDirectory": "public"
+  }
+  
