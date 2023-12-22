@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Contact - Eshetu Melese</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      .valid-feedback {
+        color: green;
+      }
+      
+      .invalid-feedback {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h1 class="logo me-auto me-lg-0"><a href="index.html">Eshetu Melese</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a class="active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://www.tiktok.com/@comedian_eshetumelese" class="tiktok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.facebook.com/p/Comedian-Eshetu-Melese-100066348503339/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/comedian.eshetu/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/@comedianeshetu" class="youtube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Please Contact me through my given address or feel free to send me a message.</p>
+          </div>
+
+          <div>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3414717089104!2d38.76650550000001!3d9.0325819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85a2f09ce52b%3A0xe0a3bcf6a743b8d2!2zV2V3ZWtpbWEgfCA0IGtpbG8gfCDhi4jhi4jhiq3hiJsgfCA0IOGKquGIjg!5e0!3m2!1sen!2set!4v1702540931721!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>4 Killo, King George VI Street, Addis Abeba</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>comedianeshetu@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>(+251) 911 946041</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form action="/api/submit" method="post" id="myForm" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-8 form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+                    <span id="name-feedback"></span>
+                  </div>
+                  <div class="col-md-8 form-group mt-3">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your phone number" required />
+                    <span id="phone-feedback"></span>
+                  </div>
+                  <div class="col-md-8 form-group mt-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                    <span id="email-feedback"></span>
+                  </div>
+                <div class="col-md-8 form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                  <span id="subject-feedback"></span>
+                </div>
+                <div class="col-md-8 form-group mt-3">
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your message here . . ." required></textarea>
+                  <span id="message-feedback"></span>
+                </div>
+
+                <div class="text-center">
+                  <button id="submit" type="submit">Send Message</button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Eshetu Melese</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">Robel Abebe</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('myForm')
+        const submitButton = document.getElementById('submit')
+      
+        // Add event listeners for input fields
+        const inputFields = ['name', 'email', 'phone', 'subject', 'message']
+        inputFields.forEach((field) => {
+          const inputElement = document.getElementById(field)
+      
+          inputElement.addEventListener('input', function () {
+            validateInput(field, inputElement.value)
+          })
+        })
+      
+        form.addEventListener('submit', function (event) {
+          event.preventDefault()
+      
+          // Validate all input fields before submitting the form
+          const isValid = inputFields.every((field) => validateInput(field, document.getElementById(field).value))
+      
+          if (isValid) {
+            submitForm()
+          }
+        })
+      
+        function validateInput(fieldName, value) {
+          const element = document.getElementById(fieldName)
+          const feedbackElement = document.getElementById(`${fieldName}-feedback`)
+      
+          switch (fieldName) {
+            case 'name':
+              // Validation logic for the name field
+              if (value.trim() === '') {
+                // If the name field is empty
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Name is required'
+                feedbackElement.classList.add('invalid-feedback')
+                return false
+              } else if (/\d/.test(value)) {
+                // If the name field contains numbers
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Name should not contain numbers'
+                feedbackElement.classList.add('invalid-feedback')
+                return false
+              } else {
+                // If the name field is valid
+                element.classList.remove('is-invalid')
+                element.classList.add('is-valid')
+                feedbackElement.innerText = ''
+                feedbackElement.classList.remove('invalid-feedback')
+                return true
+              }
+      
+            case 'email':
+              // Validation logic for the email field
+              if (value.trim() === '') {
+                // If the email field is empty
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Email is required'
+                feedbackElement.classList.add('invalid-feedback')
+                return false
+              } else {
+                // If the email field is not empty, check for valid email format
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+                if (emailRegex.test(value)) {
+                  // If the email format is valid
+                  element.classList.remove('is-invalid')
+                  element.classList.add('is-valid')
+                  feedbackElement.innerText = ''
+                  feedbackElement.classList.remove('invalid-feedback')
+                  return true
+                } else {
+                  // If the email format is invalid
+                  element.classList.remove('is-valid')
+                  element.classList.add('is-invalid')
+                  feedbackElement.innerText = 'Enter a valid email address'
+                  feedbackElement.classList.add('invalid-feedback')
+                  return false
+                }
+              }
+      
+            case 'phone':
+              // Validation logic for the phone field (basic phone number format check)
+              const phoneRegex = /^(?:\+\d{1,3}\s?)?0?[1-9]\d{8}$/
+      
+              if (value.trim() === '') {
+                // If the phone field is empty
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Phone number is required'
+                feedbackElement.classList.add('invalid-feedback')
+                return false
+              } else if (phoneRegex.test(value.replace(/\s/g, ''))) {
+                // If the phone number format is valid (either "+251 911121314" or "0911121314")
+                element.classList.remove('is-invalid')
+                element.classList.add('is-valid')
+                feedbackElement.innerText = ''
+                feedbackElement.classList.remove('invalid-feedback')
+                return true
+              } else {
+                // If the phone number format is invalid
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Enter a valid phone number e.g. +251 9 xx xx xx OR 09 xx xx xx'
+                feedbackElement.classList.add('invalid-feedback')
+                return false
+              }
+      
+            case 'subject':
+              // Validation logic for the subject field
+              if (value.trim() !== '') {
+                element.classList.remove('is-invalid')
+                element.classList.add('is-valid')
+                feedbackElement.innerText = ''
+                return true
+              } else {
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Subject is required'
+                return false
+              }
+      
+            case 'message':
+              // Validation logic for the message field
+              if (value.trim() !== '') {
+                element.classList.remove('is-invalid')
+                element.classList.add('is-valid')
+                feedbackElement.innerText = ''
+                return true
+              } else {
+                element.classList.remove('is-valid')
+                element.classList.add('is-invalid')
+                feedbackElement.innerText = 'Message is required, Can not be empty!'
+                return false
+              }
+      
+            default:
+              return true // Default to true for other fields
+          }
+        }
+      
+        function submitForm() {
+          const name = document.getElementById('name')
+          const email = document.getElementById('email')
+          const phone = document.getElementById('phone')
+          const subject = document.getElementById('subject')
+          const message = document.getElementById('message')
+      
+          const formData = {
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            subject: subject.value,
+            message: message.value
+          }
+      
+          // Reset validation classes and messages
+          const inputFields = ['name', 'email', 'phone', 'subject', 'message']
+          inputFields.forEach((field) => {
+            const element = document.getElementById(field)
+            const feedbackElement = document.getElementById(`${field}-feedback`)
+      
+            element.classList.remove('is-valid', 'is-invalid')
+            feedbackElement.innerText = ''
+          })
+      
+          fetch('/api/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`)
+              }
+              return response.json()
+            })
+            .then((data) => {
+              if (data.success) {
+                // Clear the form
+                document.getElementById('myForm').reset()
+                alert('Message submitted successfully!')
+              } else {
+                alert('Message submission failed. Please try again.')
+              }
+            })
+            .catch((error) => {
+              console.error('Error:', error)
+              alert('An error occurred. Please try again later.')
+            })
+        }
+      })
+    </script>
+  </body>
+</html>
