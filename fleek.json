@@ -3,6 +3,9 @@
     "framework": "other",
     "publicFolder": "public",
     "buildCommand": "npm install && npm run build",
-    "publishDirectory": "public"
+    "publishDirectory": "public",
+    "env": {
+      "MONGODB_URI": "mongodb+srv://robel:robel123456789@robcluster.wkyvhvq.mongodb.net/portfolio?retryWrites=true&w=majority"
+    }
   }
   
